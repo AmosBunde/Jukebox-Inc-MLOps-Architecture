@@ -31,6 +31,8 @@ Jukebox Inc is revolutionizing the music industry by bringing internet-connected
 ## Architecture Components
 ![Proposed Workflows](https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture/blob/main/JunkInc%20Data%20Architecture.svg)
 
+![Detailed Components Interaction in The Architecture Diagram]([https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture/blob/main/JunkInc%20Data%20Architecture.svg](https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture/blob/main/diagram-export-2-23-2025-2_26_27-PM.png))
+
 ### Data Pipeline & Infrastructure
 - Event-driven streaming using Apache Kafka: 
 - Change Data Capture (CDC) with Debezium
