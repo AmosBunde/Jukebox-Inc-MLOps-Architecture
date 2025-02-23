@@ -29,7 +29,7 @@ Jukebox Inc is revolutionizing the music industry by bringing internet-connected
    - Optimizes music library refresh cycles
 
 ## Architecture Components
-![Proposed Workflows]()
+![Proposed Workflows](https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture/blob/main/JunkInc%20Data%20Architecture.svg)
 
 ### Data Pipeline & Infrastructure
 - Event-driven streaming using Apache Kafka: 
