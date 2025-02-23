@@ -53,8 +53,8 @@ Jukebox Inc is revolutionizing the music industry by bringing internet-connected
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture.git
+   cd Jukebox-Inc-MLOps-Architecture/mlops-architecture-model/
    ```
 
 2. Install dependencies:
