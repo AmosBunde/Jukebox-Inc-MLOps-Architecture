@@ -235,4 +235,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For questions or support, please contact Amos the MLOps Platform Lead at MKopa .
+For questions or support, please contact Amos the MLOps Platform Lead(amos_bunde@yahoo.com).
