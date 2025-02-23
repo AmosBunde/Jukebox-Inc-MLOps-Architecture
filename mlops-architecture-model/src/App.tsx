@@ -40,6 +40,7 @@ function App() {
         <Section title="Data Pipeline & Infrastructure" icon={Database}>
           <Card title="Data Ingestion Architecture">
             <img 
+              src="https://github.com/AmosBunde/Jukebox-Inc-MLOps-Architecture/blob/main/diagram-export-2-23-2025-6_00_46-AM.png"
               alt="Data Pipeline Visualization"
               className="w-full rounded-lg mb-4"
             />
@@ -322,7 +323,7 @@ function App() {
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-center text-gray-400">
-            © 2025 Jukebox Inc. MLOps Architecture Documentation
+            © 2025 Jukebox Inc. MLOps Architecture Documentation designed by Amos Bunde
           </p>
         </div>
       </footer>
