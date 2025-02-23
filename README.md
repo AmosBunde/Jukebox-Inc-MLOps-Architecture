@@ -31,7 +31,7 @@ Jukebox Inc is revolutionizing the music industry by bringing internet-connected
 ## Architecture Components
 
 ### Data Pipeline & Infrastructure
-- Event-driven streaming using Apache Kafka
+- Event-driven streaming using Apache Kafka: 
 - Change Data Capture (CDC) with Debezium
 - Delta Lake for data storage and versioning
 - Apache Airflow for orchestration
