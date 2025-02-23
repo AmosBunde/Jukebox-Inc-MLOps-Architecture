@@ -43,6 +43,100 @@ Jukebox Inc is revolutionizing the music industry by bringing internet-connected
 - Kubernetes for model serving
 - Prometheus & Grafana for monitoring
 
+## Architecture Workflow
+# 1. Data Ingestion (CDC with Debezium & Apache Kafka)
+
+### **Change Data Capture (CDC) with Debezium**
+- Monitors changes in source databases (e.g., PostgreSQL, MySQL) and streams them in real-time.
+- Ensures that new, updated, or deleted records are continuously captured.
+
+### **Apache Kafka**
+- Acts as the central messaging hub for streaming real-time changes from Debezium to downstream components.
+- Kafka topics help decouple ingestion from processing and storage, allowing multiple consumers to process data in parallel.
+
+### **How It Helps in MLOps**
+- Ensures that the latest data is always available for machine learning pipelines.
+- Provides a **scalable and fault-tolerant** data ingestion mechanism.
+
+---
+
+# 2. Data Storage & Processing (Apache Airflow & Delta Lake)
+
+### **Apache Airflow**
+- Orchestrates data pipelines, scheduling and managing batch or near-real-time workflows.
+- Moves data from Kafka to Delta Lake while performing transformations, validation, and feature extraction.
+
+### **Delta Lake**
+- A **structured data lake** that provides **ACID transactions**, **schema enforcement**, and **time travel** (versioning).
+- Ensures that raw and processed data is efficiently stored and managed.
+
+### **How It Helps in MLOps**
+- Provides **data consistency, reliability, and lineage tracking**, which is critical for model reproducibility.
+- Allows ML pipelines to use historical data snapshots for training and validation.
+
+---
+
+# 3. Model Lifecycle Management (MLflow & Feast)
+
+### **MLflow**
+- Manages the lifecycle of ML models, including **experiment tracking, model versioning, and reproducibility**.
+- Helps compare model performance across different experiments and select the best one for deployment.
+
+### **Feast (Feature Store)**
+- Stores precomputed features that are used by ML models during training and inference.
+- Ensures **consistency** between features used for training and those used for real-time predictions.
+
+### **How It Helps in MLOps**
+- Enables **model governance and reproducibility**, ensuring that teams can track changes and manage experiments.
+- Reduces **training-inference skew** by ensuring that feature transformations remain the same in both training and production.
+
+---
+
+# 4. Model Serving (Kubernetes)
+
+### **Kubernetes**
+- Deploys ML models as **containerized microservices**.
+- Provides **scalability, auto-recovery, and load balancing** to handle multiple inference requests.
+
+### **How It Helps in MLOps**
+- Ensures that ML models run **efficiently in production environments**.
+- Supports **rolling updates, rollback mechanisms, and multi-version deployments**.
+
+---
+
+# 5. Monitoring (Prometheus & Grafana)
+
+### **Prometheus**
+- Collects system metrics (**CPU, memory, inference latency, request rates**).
+- Monitors **model performance** (drift detection, feature skew).
+
+### **Grafana**
+- Provides **real-time visualization dashboards**.
+- Helps track **model health, API latency, and operational metrics**.
+
+### **How It Helps in MLOps**
+- Ensures that models perform **optimally in production** and detect **concept drift**.
+- Allows **proactive alerting and troubleshooting** for infrastructure and model failures.
+
+---
+
+# Implementation & Benefits in MLOps
+
+### **End-to-End Automation**
+- Automates **data ingestion, storage, feature engineering, model training, deployment, and monitoring**.
+
+### **Scalability & Flexibility**
+- Uses **containerized deployment (Kubernetes)** and **real-time streaming (Kafka)** to support large-scale ML workloads.
+
+### **Model Reproducibility & Governance**
+- **MLflow & Feast ensure model traceability**, while **Delta Lake provides data lineage**.
+
+### **Improved Monitoring & Observability**
+- **Prometheus & Grafana** help detect **model drift, anomalies, and system failures** in real time.
+
+This **MLOps architecture ensures a robust, scalable, and automated workflow for machine learning in production** 🚀.
+
+
 ## Development Setup
 
 ### Prerequisites
